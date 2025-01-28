@@ -1,4 +1,5 @@
 // components/Certificates.js
+import Image from 'next/image';
 import React from 'react';
 const certificatesData = [
   {
@@ -26,20 +27,20 @@ const certificatesData = [
 
 const Certificates = () => {
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container bg-[#001122] mx-auto px-4 py-12">
       <h2 className="text-3xl font-bold text-center mb-8">Certificates and Licenses</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {certificatesData.map((cert) => (
           <div
             key={cert.id}
-            className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 relative"
           >
             <figure className="px-10 pt-10">
-              <img src={cert.icon} alt={cert.title} className="w-16 h-16" />
+              <img src={cert.icon} alt={cert.title} className="w-[250px]" />
             </figure>
             <div className="card-body items-center text-center">
               <h3 className="card-title text-xl font-semibold">{cert.title}</h3>
-              <p className="text-gray-600">{cert.description}</p>
+              <p className="text-gray-100">{cert.description}</p>
               <div className="card-actions mt-4">
                 <a
                   href={cert.link}

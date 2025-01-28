@@ -17,7 +17,7 @@ const industries = [
 
 const IndustriesWeSupport = () => {
   return (
-    <div className="max-w-7xl mx-auto p-6">
+    <div className="max-w-7xl mx-auto p-6 bg-[#001122]">
       <h2 className="text-3xl font-bold text-center mb-8">Industries We Support</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-10">
         {industries.map((industry, index) => (
