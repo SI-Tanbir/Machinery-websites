@@ -1,10 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+
+ 
+
 
   return (
     <nav className="bg-gray-800 text-white shadow-lg">
